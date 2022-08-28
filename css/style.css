@@ -1,0 +1,17 @@
+.title p {
+  color: red;
+}
+
+ul li {
+  list-style: none;
+}
+
+.slick-prev {
+  left: 50px !important;
+  z-index: 100;
+}
+
+.slick-next {
+  right: 50px !important;
+  z-index: 100;
+}
