@@ -11,41 +11,341 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <!-- jQueryライブラリの読み込み-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
-
   <!-- slickの読み込み-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
-  <div class="title">
-    <h1 class="h1">jQueryライブラリーの読み込みテスト</h1>
-    <p class="top-title">
-      color
-    </p>
+  <header id="#header">
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item">
+          <a href="#" class="header-nav-list-link top">
+            <img src="../img/logo_e_salon01.svg" alt="ヘッダーロゴ" class="header-nav-list-link top-icon">
+          </a>
+        </li>
+        <li class="header-nav-list-item"><a href="#" class="header-nav-list-link salon">E SALONってなに？</a></li>
+        <li class="header-nav-list-item"><a href="#" class="header-nav-list-link flow">ご利⽤の流れ</a></li>
+        <li class="header-nav-list-item"><a href="#" class="header-nav-list-link brand">ご試着可能ブランド</a></li>
+        <li class="header-nav-list-item">
+          <a href="#" class="header-nav-list-link is">
+            <img src="../img/logo_instagram01.svg" alt="インスタアイコンclass="header-nav-list-link is link-btn">
+          </a>
+        </li>
+      </ul>
+
+      <div class="header-dr-btn">
+        <a href="#" class="header-dr-btn-link">専用アプリ ダウンロード
+          <img src="../img/link_c.png" alt="リンクアイコン" class="header-icon-is"><br>（無料）
+        </a>
+      </div>
+      <div class="header-hb">
+        <span class="header-hb-top"></span>
+        <span class="header-hb-middle"></span>
+        <span class="header-hb-bottom"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <main id="main">
+      <section id="infomation">
+        <div class="infomation-wrapper">
+          <div class="infomation-line">
+            <span class="infomation-line lt"></span>
+            <span class="infomation-line lm"></span>
+            <span class="infomation-line lb"></span>
+            <span class="infomation-line rt"></span>
+            <span class="infomation-line rm"></span>
+            <span class="infomation-line rb"></span>
+            <div class="infomation-unity">
+              <p class="infomation-unity first">あの店 この店、まとめて試着。</p>
+              <p class="infomation-unity shop">ルクアの店舗横断<br>フィッティングショップ</p>
+              <p class="infomation-unity name">E SALON</p>
+              <p class="infomation-unity floor">ルクア イーレ 5F</p>
+              <p class="infomation-unity open">OPEN</p>
+            </div>
+          </div>
+          <div class="infomation-comment">
+            <p class="infomation-comment catch-copy">試着室では、思い切りわがままになりたい。</p>
+            <p class="infomation-comment description">大胆に冒険したり、念入りに見比べたり。誰かの目に遠慮せず、「試してみたい」と思う気持ちに、もっと気軽に、もっと素直に向き合えますように。</p>
+            <p class="infomation-comment description">あたらしい自分と出会うための、「試着」という大切な行為を一歩前に。ルクアの店舗横断フィッティングショップ“E SALON”、オープン。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="content-title">
+          <p class="content-title catch-copy">新しい試着のカタチ。</p>
+        </div>
+
+        <div class="content-feature">
+          <div class="content-list">
+            <div class="content-list want">
+              <p>⽩のパンツが欲しいけど、コーディネートが難しそう。⾊々なブランドから、しっくりくるトップスを⾒つけたい。</p>
+            </div>
+            <div class="content-list img">
+              <img src="../img/katachi_illust_point01.png" alt="コーディネートのイラスト">
+            </div>
+            <div class="content-list can">
+              <p>違うブランドの商品を
+                組み合わせてコーディネート
+                できる！</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-feature">
+          <div class="content-list">
+            <div class="content-list want">
+              <p>⼦連れでも、⾊々なお店の服を試着してみたい。</p>
+            </div>
+            <div class="content-list img">
+              <img src="../img/katachi_illust_point02.png" alt="試着するイラスト">
+            </div>
+            <div class="content-list can">
+              <p>家族や友人と一緒に
+                試着できる！</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-feature">
+          <div class="content-list">
+            <div class="content-list want">
+              <p>もうすぐ友だちの結婚式。⾊んなお店のドレスを⼀気に試着してみたい。</p>
+            </div>
+            <div class="content-list img">
+              <img src="../img/katachi_illust_point03.png" alt="ブランドのアイテムを着比べるイラスト">
+            </div>
+            <div class="content-list can">
+              <p>色々なブランドのアイテムを
+                一気に着比べられる！</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-feature">
+          <div class="content-list">
+            <div class="content-list want">
+              <p>すき間時間にアプリで⾒つけた気になる洋服を、まとめて試着してみたい。</p>
+            </div>
+            <div class="content-list img">
+              <img src="../img/katachi_illust_point04.png" alt="アプリで気になる洋服を見つけるイラスト">
+            </div>
+            <div class="content-list can">
+              <p>アプリで⾒つけた
+                気になるアイテムを、
+                そのまま試着できる！</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="descrption">
+        <div class="descrption-wrapper">
+          <div class="descrption-title">
+            <h2 class="descrption-title section-title">WHAT IS “E SALON”?</h2>
+            <p class="descrption-title section-title sub">E SALONってなに？</p>
+          </div>
+
+          <div class="descrption-detail">
+            <p class="description-detail catch-copy">試着を、もっと⾃由に、気兼ねなく。</p>
+            <p class="description-detail service">E SALON（イーサロン）は、ブランドの垣根を越えたプライベートフィッティングサービスです。</p>
+            <p class="description-detail app">専用アプリ（無料）でルクア大阪に入っているブランドのアイテムから好きな物をピックアップ。</p>
+            <p class="description-detail price">あとは受付していただいた時間に専用フィッティングルームまでお越しいただくだけ。利用料はかかりません。</p>
+            <p class="description-detail item">選んだアイテムをルーム内にご用意のうえ、お待ちしております。</p>
+            <p class="description-detail fitting">ブランドの垣根を越え、自由にフィッティングをお楽しみください。</p>
+          </div>
+
+          <div class="description-slider">
+            <div class="description-visual">
+              <img src="../img/what_slider_img01.jpg" alt="店内画像1" class="description-visual img">
+              <p class="description-visual comment">色々なショップにある気になるアイテムを、
+                まとめて試着することができます。</p>
+            </div>
+            <div class="description-visual">
+              <img src="../img/what_slider_img02.jpg" alt="店内画像2" class="description-visual img">
+              <p class="description-visual comment">1名様〜4名様用のルームを完備。完全プライベート空間で、家族と、友人と、試着をお楽しみいただけます。利用料はかかりません。</p>
+            </div>
+            <div class="description-visual">
+              <img src="../img/what_slider_img03.jpg" alt="店内画像3" class="description-visual img">
+              <p class="description-visual comment">オンラインでしか買えなかったブランドが期間限定で登場するゾーンも併設。</p>
+            </div>
+            <div class="description-visual">
+              <img src="../img/what_slider_img04.jpg" alt="店内画像4" class="description-visual img">
+              <p class="description-visual comment">試着後に気に入った商品は、E SALON内でご購入いただけます。</p>
+            </div>
+          </div>
+
+          <div class="description-point">
+            <img src="../img/icon_point.svg" alt="ポイントアイコン" class="description-point img">
+            <p class="description-point point">ルクアのポイントも貯まります。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow">
+        <div class="flow-wrapper">
+          <div class="flow-title">
+            <h2 class="flow-title section-title">HOW TO USE</h2>
+            <p class="flow-title section-title sub">ご利⽤の流れ</p>
+          </div>
+
+          <div class="flow-frame">
+            <div class="flow-container">
+              <div class="flow-container-step step1">
+                <h3 class="flow-title">STEP1</h3>
+              </div>
+              <div class="flow-container-step step-img">
+                <img src="../img/howto_illust_step01_01.png" alt="アプリDLのイラスト">
+              </div>
+              <div class="flow-container-step">
+                <p class="step-title">E SALONアプリをダウンロード</p>
+                <p class="step-title">1万点以上のアイテム掲載！
+                  E SALON専⽤アプリをダウンロード！（無料）</p>
+              </div>
+              <div class="flow-container-step step-app">
+                <a href="#" class="dl-btn">ダウンロード
+                  <img src="../img/link_c.png" alt="リンクアイコン" class="dl-btn-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="flow-container">
+              <div class="flow-container-step step2">
+                <h3 class="flow-title">STEP2</h3>
+              </div>
+              <div class="flow-container-step step-img">
+                <img src="../img/howto_illust_step01_02.png" alt="アイテムをセレクトしているイラスト">
+              </div>
+              <div class="flow-container-step">
+                <p class="step-title">お気に⼊り登録</p>
+                <p class="step-title">お好きな時間にアプリをチェック。気になる商品は「ワードローブに追加」をクリック。</p>
+              </div>
+            </div>
+
+            <div class="flow-container">
+              <div class="flow-container-step step3">
+                <h3 class="flow-title">STEP3</h3>
+              </div>
+              <div class="flow-container-step step-img">
+                <img src="../img/howto_illust_step01_03.png" alt="店頭で試着受付">
+              </div>
+              <div class="flow-container-step">
+                <p class="step-title">店頭で試着受付</p>
+                <p class="step-title">ルクア イーレ 5F
+                  「E SALON」で試着受付！
+                  利用料は無料！</p>
+              </div>
+            </div>
+
+            <div class="flow-container">
+              <div class="flow-container-step step4">
+                <h3 class="flow-title">STEP4</h3>
+              </div>
+              <div class="flow-container-step step-img">
+                <img src="../img/howto_illust_step01_04.png" alt="試着・購入">
+              </div>
+              <div class="flow-container-step">
+                <p class="step-title">試着・購入</p>
+                <p class="step-title">受付時間がくれば、自由に試着して、気に入った商品はその場で購入！</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-move-check">
+            <a href="#" class="move-check-btn">詳しくは動画でチェック
+              <img src="../img/link_c.png" alt="リンクアイコン" class="move-check-btn link-btn">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="brand">
+        <div class="brand-wrapper">
+          <div class="brand-title">
+            <h2 class="brand-title section-title">BRANDS</h2>
+            <p class="brand-title section-title sub">ご試着可能ブランド</p>
+          </div>
+
+          <div class="brand-each">
+            <img src="../img/brand_logo_journal_standard.svg" alt="ジャーナル スタンダード" class="brand-each-item js">
+            <img src="../img/brand_logo_noble.svg" alt="ノーブル" class="brand-each-item noble">
+            <img src="../img/brand_logo_edifice_et_iena.svg" alt="ル ドーム エディフィス エ イエナ" class="brand-each-item edifice">
+            <img src="../img/brand_logo_diesel.svg" alt="ディーゼル" class="brand-each-item diesel">
+            <img src="../img/brand_logo_redyazel.svg" alt="レディアゼル" class="brand-each-item redyazel">
+            <img src="../img/brand_logo_urban_research.svg" alt="アーバンリサーチストア" class="brand-each-item ur">
+            <img src="../img/brand_logo_lee.svg" alt="リー" class="brand-each-item lee">
+            <img src="../img/brand_logo_champion.svg" alt="チャンピオン" class="brand-each-item champion">
+            <img src="../img/brand_logo_spick_span.svg" alt="スピック＆スパン" class="brand-each-item ss">
+            <img src="../img/brand_logo_plage.svg" alt="プラージュ" class="brand-each-item plage">
+            <img src="../img/brand_logo_slobe_iena.svg" alt="スローブイエナ" class="brand-each-item slobe">
+            <img src="../img/brand_logo_peak_performance.svg" alt="ピークパフォーマンス" class="brand-each-item pp">
+            <img src="../img/brand_logo_relume.svg" alt="ジャーナルスタンダード レリューム" class="brand-each-item relume">
+            <img src="../img/brand_logo_ragtag.svg" alt="ラグタグ" class="brand-each-item ragtag">
+          </div>
+
+          <div class="brand-more-check">
+            <a href="#" class="more-check-btn">全てのご試着可能ブランドを⾒る
+              <img src="../img/link_c.png" alt="リンクアイコン" class="more-check-btn link-btn">
+            </a>
+          </div>
+          <div class="brand-more-note">
+            <p class="note-comment">※ご試着可能ブランドは予告なく変更させて
+              いただく場合があります。</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <ul class="slick">
-    <li>
-      <img src="../img/main_visual_2-0x0.jpg" width="400" height="200" alt="">
-    </li>
-    <li>
-      <img src="../img/main_visual_6-0x0.jpg" width="400" height="200" alt="">
-    </li>
-    <li>
-      <img src="../img/main_visual_7-0x0.jpg" width="400" height="200" alt="">
-    </li>
-  </ul>
+  <footer id="footer">
+    <div class="footer-logo">
+      <img src="../img/logo_e_salon01.svg" alt="#ヘッダーロゴ" class="footer-logo-img">
+    </div>
 
-<script>
-  $('.slick').slick({
-  autoplay: true,
-  dots: true,
-  arrows: true,
-  infinite: true,
-  pauseOnHover: false,
-  });
-</script>
-  <!-- <script src="../js/main.js"></script> -->
+    <div class="footer-dr-btn">
+      <a href="#" class="footer-dr-btn-link">専用アプリ ダウンロード<br>（無料）
+        <img src="../img/link_c.png" alt="リンクアイコン" class="footer-dr-btn link-btn">
+      </a>
+    </div>
+
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-list-item"><a href="#" class="footer-nav-list-link top">TOP</a></li>
+        <li class="footer-nav-list-item"><a href="#" class="footer-nav-list-link salon">E SALONってなに？</a></li>
+        <li class="footer-nav-list-item"><a href="#" class="footer-nav-list-link flow">ご利⽤の流れ</a></li>
+        <li class="footer-nav-list-item"><a href="#" class="footer-nav-list-link brand">ご試着可能ブランド</a></li>
+        <li class="footer-nav-list-item">
+          <a href="#" class="footer-nav-list-link is">Instagram
+            <img src="../img/link_c.png" alt="リンクアイコン" class="footer-nav-list-link is link-btn">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="footer-company">
+      <div class="footer-company-icon">
+        <a href="" class="footer-company-icon-link">
+          <img src="../img/logo_lucua_osaka01.svg" alt="ルクアアイコン" class="footer-company-icon-img">
+        </a>
+      </div>
+
+      <div class="footer-company-profile">
+        <a href="" class="footer-company-profile-link">会社概要
+          <img src="../img/link_c.png" alt="リンクアイコン" class="footer-company-profile-img">
+        </a>
+      </div>
+      <div class="footer-company-profile">
+        <a href="" class="footer-company-profile-link">プライバシーポリシー
+          <img src="../img/link_c.png" alt="リンクアイコン" class="footer-company-profile-img">
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p class="copyright"><small>Copyright © JR West Japan Shopping Center Development Company all rights reserved.</small></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

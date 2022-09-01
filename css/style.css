@@ -2,6 +2,9 @@
   color: red;
 }
 
+ul {
+  background-color: #666;
+}
 ul li {
   list-style: none;
 }
