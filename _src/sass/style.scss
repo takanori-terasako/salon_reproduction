@@ -1,21 +1,48 @@
-.title {
-  p {
-    color: red;
+@import "variables";
+@import "base";
+
+/*
+header
+*/
+.header-nav {
+
+  .header-nav-list {
+    padding: 0 18px;
+
+    .header-nav-list-item {
+      list-style: none;
+
+      .salon, .flow, .brand, .is {
+        display: none;
+
+      }
+      .top {
+        display: block;
+
+        .top-icon {
+          width: calc(100% / 3);
+          height: auto;
+        }
+      }
+    }
   }
 }
 
-ul {
-  background-color: #666;
-  li {
-    list-style: none;
-  }
-}
+/*
+visual
+*/
+.visual-container {
 
-.slick-prev {
-  left: 50px !important;
-  z-index: 100;
-}
-.slick-next {
-  right: 50px !important;
-  z-index: 100;
+  .visual-container-img {
+
+    .main-visual {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../img/mv_sp.jpg);
+      z-index: -10;
+      width: 100%;
+      max-height: 1078px;
+    }
+  }
 }

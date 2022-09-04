@@ -1,20 +1,59 @@
-.title p {
-  color: red;
+body {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 100%;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
 }
 
-ul {
-  background-color: #666;
+input, button, textarea, select {
+  -webkit-appearance: none;
+  appearance: none;
 }
-ul li {
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*
+header
+*/
+.header-nav .header-nav-list {
+  padding: 0 18px;
+}
+.header-nav .header-nav-list .header-nav-list-item {
   list-style: none;
 }
-
-.slick-prev {
-  left: 50px !important;
-  z-index: 100;
+.header-nav .header-nav-list .header-nav-list-item .salon, .header-nav .header-nav-list .header-nav-list-item .flow, .header-nav .header-nav-list .header-nav-list-item .brand, .header-nav .header-nav-list .header-nav-list-item .is {
+  display: none;
+}
+.header-nav .header-nav-list .header-nav-list-item .top {
+  display: block;
+}
+.header-nav .header-nav-list .header-nav-list-item .top .top-icon {
+  width: 33.3333333333%;
+  height: auto;
 }
 
-.slick-next {
-  right: 50px !important;
-  z-index: 100;
+/*
+visual
+*/
+.visual-container .visual-container-img .main-visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/mv_sp.jpg);
+  z-index: -10;
+  width: 100%;
+  max-height: 1078px;
 }

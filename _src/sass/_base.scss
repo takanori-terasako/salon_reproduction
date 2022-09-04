@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 100%;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'palt';
+	font-feature-settings: 'palt';
+}
+
+input, button, textarea, select {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
