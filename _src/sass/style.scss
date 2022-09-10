@@ -4,45 +4,153 @@
 /*
 header
 */
-.header-nav {
-
-  .header-nav-list {
-    padding: 0 18px;
-
-    .header-nav-list-item {
-      list-style: none;
-
-      .salon, .flow, .brand, .is {
-        display: none;
-
-      }
-      .top {
+.top-container {
+  .top-section {
+    position: relative;
+    .top-section-logo {
+      max-width: 100%;
+      background-image: url("../img/mv_sp.jpg");
+      background-size: 100% auto;
+      min-height: 685px;
+      max-height: 1078px;
+      background-repeat: no-repeat;
+      .top-logo-section-link {
+        text-align: left;
         display: block;
-
-        .top-icon {
-          width: calc(100% / 3);
+        padding: 20px;
+        .top-logo-section-img {
+          width: calc(100vw / 3.5);
           height: auto;
         }
       }
     }
   }
-}
 
-/*
-visual
-*/
-.visual-container {
+  .header {
+    .header-menu {
 
-  .visual-container-img {
-
-    .main-visual {
-      position: absolute;
+      position: fixed;
       top: 0;
-      left: 0;
-      background-image: url(../img/mv_sp.jpg);
-      z-index: -10;
       width: 100%;
-      max-height: 1078px;
+
+      .header-logo {
+        display: none;
+      }
+      .header-hb {
+        position: relative;
+        top: 35px;
+        z-index: 10;
+        .header-hb-area {
+          display: none;
+          position: relative;
+          left: 87%;
+          width: 35px;
+          height: 20px;
+          padding-right: 35px;
+          cursor: pointer;
+          span {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $cBlack;
+            transition: .5s;
+          }
+          span:first-of-type {
+            top: 0;
+          }
+          span:nth-of-type(2) {
+            top: 50%;
+          }
+          span:last-of-type {
+            top: 100%;
+          }
+        }
+        .active {
+
+          span:first-of-type {
+            top: 50%;
+            transform: rotate(-45deg);
+            transition: .5s;
+          }
+          span:nth-of-type(2) {
+            opacity: 0;
+            transition: .5s;
+          }
+          span:last-of-type {
+            top: 50%;
+            transform: rotate(45deg);
+            transition: .5s;
+          }
+          span {
+            background-color: $cWhite;
+          }
+        }
+      }
+
+      .header-nav {
+        margin-top: -20px;
+        transform: translateX(100%);
+        height: 100vh;
+        background-color: $bcGray;
+        transition: .5s;
+
+        .header-nav-list {
+          padding: 140px 0 0 0;
+          margin: 0;
+
+          li {
+            padding-bottom: 45px;
+
+            a {
+              color: $cWhite;
+              #logo_e_salon01 {
+                fill: $cWhite;
+              }
+              transition: .5s;
+              &:hover {
+                opacity: 0.8;
+                transition: .5s;
+              }
+            }
+          }
+          .logo {
+            padding-bottom: 125px;
+          }
+          .is {
+            padding-bottom: 100px;
+          }
+        }
+        .header-nav-instagram {
+          display: none;
+        }
+      }
+      .active {
+        transform: translateX(0);
+      }
+      .header-dl-btn-sp {
+        background-color: $cBrown;
+        width: 338px;
+        margin: auto;
+        height: 70px;
+        border-radius: 40px;
+        a {
+          padding-top: 10px;
+          display: block;
+          height: 70px;
+          color: $cWhite;
+          font-size: $sm-rg-B;
+          letter-spacing: normal;
+          transition: .5s;
+          &:hover {
+            opacity: 0.8;
+            transition: .5s;
+          }
+          p {
+            font-size: $sm-rg-A;
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }

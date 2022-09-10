@@ -1,5 +1,20 @@
+@charset "UTF-8";
+/*
+color
+*/
+/*
+backgrand-color
+*/
+/*
+font
+*/
+/*
+fontsize
+*/
 body {
-  color: #333333;
+  text-align: center;
+  font-family: Helvetica, Arial, "游ゴシック Medium", 游ゴシック体, "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic ProN", "Hiragino Sans", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  color: #333;
   background-color: #ffffff;
   font-size: 100%;
   line-height: 1.7;
@@ -25,35 +40,150 @@ img {
   vertical-align: bottom;
 }
 
-/*
-header
-*/
-.header-nav .header-nav-list {
-  padding: 0 18px;
+a {
+  text-decoration: none;
 }
-.header-nav .header-nav-list .header-nav-list-item {
+
+li {
   list-style: none;
-}
-.header-nav .header-nav-list .header-nav-list-item .salon, .header-nav .header-nav-list .header-nav-list-item .flow, .header-nav .header-nav-list .header-nav-list-item .brand, .header-nav .header-nav-list .header-nav-list-item .is {
-  display: none;
-}
-.header-nav .header-nav-list .header-nav-list-item .top {
-  display: block;
-}
-.header-nav .header-nav-list .header-nav-list-item .top .top-icon {
-  width: 33.3333333333%;
-  height: auto;
 }
 
 /*
-visual
+header
 */
-.visual-container .visual-container-img .main-visual {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../img/mv_sp.jpg);
-  z-index: -10;
-  width: 100%;
+.top-container .top-section {
+  position: relative;
+}
+.top-container .top-section .top-section-logo {
+  max-width: 100%;
+  background-image: url("../img/mv_sp.jpg");
+  background-size: 100% auto;
+  min-height: 685px;
   max-height: 1078px;
+  background-repeat: no-repeat;
+}
+.top-container .top-section .top-section-logo .top-logo-section-link {
+  text-align: left;
+  display: block;
+  padding: 20px;
+}
+.top-container .top-section .top-section-logo .top-logo-section-link .top-logo-section-img {
+  width: 28.5714285714vw;
+  height: auto;
+}
+.top-container .header .header-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.top-container .header .header-menu .header-logo {
+  display: none;
+}
+.top-container .header .header-menu .header-hb {
+  position: relative;
+  top: 35px;
+  z-index: 10;
+}
+.top-container .header .header-menu .header-hb .header-hb-area {
+  display: none;
+  position: relative;
+  left: 87%;
+  width: 35px;
+  height: 20px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+.top-container .header .header-menu .header-hb .header-hb-area span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-hb .header-hb-area span:first-of-type {
+  top: 0;
+}
+.top-container .header .header-menu .header-hb .header-hb-area span:nth-of-type(2) {
+  top: 50%;
+}
+.top-container .header .header-menu .header-hb .header-hb-area span:last-of-type {
+  top: 100%;
+}
+.top-container .header .header-menu .header-hb .active span:first-of-type {
+  top: 50%;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-hb .active span:nth-of-type(2) {
+  opacity: 0;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-hb .active span:last-of-type {
+  top: 50%;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-hb .active span {
+  background-color: #ffffff;
+}
+.top-container .header .header-menu .header-nav {
+  margin-top: -20px;
+  transform: translateX(100%);
+  height: 100vh;
+  background-color: #707070;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-nav .header-nav-list {
+  padding: 140px 0 0 0;
+  margin: 0;
+}
+.top-container .header .header-menu .header-nav .header-nav-list li {
+  padding-bottom: 45px;
+}
+.top-container .header .header-menu .header-nav .header-nav-list li a {
+  color: #ffffff;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-nav .header-nav-list li a #logo_e_salon01 {
+  fill: #ffffff;
+}
+.top-container .header .header-menu .header-nav .header-nav-list li a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-nav .header-nav-list .logo {
+  padding-bottom: 125px;
+}
+.top-container .header .header-menu .header-nav .header-nav-list .is {
+  padding-bottom: 100px;
+}
+.top-container .header .header-menu .header-nav .header-nav-instagram {
+  display: none;
+}
+.top-container .header .header-menu .active {
+  transform: translateX(0);
+}
+.top-container .header .header-menu .header-dl-btn-sp {
+  background-color: #681216;
+  width: 338px;
+  margin: auto;
+  height: 70px;
+  border-radius: 40px;
+}
+.top-container .header .header-menu .header-dl-btn-sp a {
+  padding-top: 10px;
+  display: block;
+  height: 70px;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: normal;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-dl-btn-sp a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.top-container .header .header-menu .header-dl-btn-sp a p {
+  font-size: 14px;
+  margin: 0;
 }

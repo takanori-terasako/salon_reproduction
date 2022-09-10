@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 body {
-  color: #333333;
-  background-color: #ffffff;
+  text-align: center;
+  font-family: $mainFont;
+  color: $cBlack;
+  background-color: $cWhite;
   font-size: 100%;
   line-height: 1.7;
   -webkit-text-size-adjust: 100%;
@@ -25,4 +27,12 @@ img {
 	max-width: 100%;
 	height: auto;
 	vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
