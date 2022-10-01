@@ -1,0 +1,97 @@
+@mixin btn1 {
+  width: 80%;
+  max-width: 338px;
+  margin: 0 auto;
+  height: 70px;
+  border-radius: 40px;
+  a {
+    padding-top: 10px;
+    display: block;
+    height: 70px;
+    color: $cWhite;
+    font-size: 1rem;
+    letter-spacing: normal;
+    transition: .5s;
+    &:hover {
+      opacity: 0.8;
+      transition: .5s;
+    }
+    p {
+      font-size: $sm-rg-A;
+      margin: 0;
+    }
+  }
+}
+
+@mixin btn2 {
+  width: 55%;
+  max-width: 338px;
+  margin: auto;
+  height: 40px;
+  border-radius: 40px;
+  a {
+    padding-top: 10px;
+    display: block;
+    height: 40px;
+    color: $cWhite;
+    font-size: 0.9rem;
+    letter-spacing: normal;
+    transition: .5s;
+    &:hover {
+      opacity: 0.8;
+      transition: .5s;
+    }
+  }
+}
+
+@mixin section-top {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top:-30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  z-index: -10;
+}
+
+@mixin fadeUp {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 1s, transform 2s;
+}
+
+@mixin inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .5s;
+}
+
+@mixin section-title {
+  font-family: $subFont;
+  font-size: $sm-A;
+  line-height: 36px;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  padding-top: 70px;
+}
+
+@mixin section-title-sub {
+  font-size: $sm-rg-D;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 45px;
+}
+
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (min-width: 768px)',
+  pc: 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}

@@ -4,30 +4,29 @@ color
 $cWhite: #ffffff;
 $cBlack: #333;
 $cGreen: #38D0DD;
+$cGray: #d0c5b0;
 
 
 /*
-backgrand-color
+background-color
 */
 $bcGray: #707070;
 $cBrown: #681216;
+$cBeige: #F5F0E7;
+$cOrange: #DD5038;
 
 /*
-font
-*/
-$mainFont: Helvetica, Arial, "游ゴシック Medium", 游ゴシック体, "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic ProN", "Hiragino Sans", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-$subFont: 'League Gothic', 'Noto Sans JP','Sriracha' sans-serif;
-
-/*
-fontsize
+font-size
 */
 $sm-A: 36px;
-$sm-B: 64px;
+$sm-B: 52px;
+$sm-C: 64px;
 
 $sm-rg-A: 14px;
 $sm-rg-B: 18px;
 $sm-rg-C: 20px;
 $sm-rg-D: 22px;
+$sm-rg-E: 28px;
 
 $rg-A: 10px;
 $rg-B: 16px;
@@ -36,3 +35,10 @@ $rg-D: 38px;
 $rg-E: 62px;
 $rg-F: 70px;
 $rg-G: 120px;
+
+/*
+font
+*/
+$mainFont: Helvetica, Arial, "游ゴシック Medium", 游ゴシック体, "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic ProN", "Hiragino Sans", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$subFont: 'Oswald', sans-serif ;
+
