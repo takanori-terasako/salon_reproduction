@@ -30,10 +30,23 @@ $(".js-fadeUp").on("inview", function () {
 slick
 */
 $(function () {
-  $(".description-slider").slick({
-    arrows: true,
+  $('.description-slider').slick({
+    autoplay: true,
     dots: true,
-    prevArrow: '<img src="前へ矢印画像のパス" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="次へ矢印画像のパス" class="slide-arrow next-arrow">',
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<img src="../img/slider_arw_prev.svg" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="../img/slider_arw_next.svg" class="slide-arrow next-arrow">',
+    responsive: [
+      {
+        breakpoint: 767, // 767px未満で・・・
+        settings: "unslick", // スライダーを無効
+      },
+    ],
   });
+});
+$(window).on("resize orientationchange", function () {
+  $('.description-slider').slick('resize');
 });

@@ -1,3 +1,15 @@
+$breakpoint: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (min-width: 768px)",
+  "pc": "screen and (min-width: 1025px)"
+);
+
+@mixin mq($bp:sp) {
+  @media #{map-get($breakpoint, $bp)} {
+    @content;
+  }
+}
+
 @mixin btn1 {
   width: 80%;
   max-width: 338px;
@@ -84,14 +96,3 @@
   line-height: 45px;
 }
 
-$breakpoint: (
-  sp: 'screen and (max-width: 767px)',
-  tab: 'screen and (min-width: 768px)',
-  pc: 'screen and (min-width: 1025px)'
-);
-
-@mixin mq($bp) {
-  @media #{map-get($breakpoint, $bp)} {
-    @content;
-  }
-}

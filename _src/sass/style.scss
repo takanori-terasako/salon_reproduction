@@ -7,7 +7,6 @@
 /*
 header
 */
-
 #top-section {
   .top-container {
     .top-section {
@@ -346,7 +345,7 @@ header
       }
     }
   }
-  
+
   #description {
     background-color: $cGray;
     position: relative;
@@ -401,10 +400,24 @@ header
 
       .description-main-visual {
         .description-slider {
-          @include mq(sp) {
+          @include mq(tab) {
             margin: 0 auto;
             max-width: 996px;
-          };
+          }
+          .slide-arrow {
+            position: absolute;
+            top: 38%;
+            z-index: 100;
+          }
+          .prev-arrow {
+            left: 10px;
+          }
+          .next-arrow {
+            right: 10px;
+          }
+          .slick-dots {
+            bottom: 40px;
+          }
           .description-visual {
             .comment {
               font-size: $sm-rg-A;
@@ -669,3 +682,4 @@ header
     }
   }
 }
+

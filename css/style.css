@@ -490,11 +490,25 @@ header
   transform: translateY(0);
   transition-delay: 0.5s;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   #main #description .description-wrapper .description-main-visual .description-slider {
     margin: 0 auto;
     max-width: 996px;
   }
+}
+#main #description .description-wrapper .description-main-visual .description-slider .slide-arrow {
+  position: absolute;
+  top: 38%;
+  z-index: 100;
+}
+#main #description .description-wrapper .description-main-visual .description-slider .prev-arrow {
+  left: 10px;
+}
+#main #description .description-wrapper .description-main-visual .description-slider .next-arrow {
+  right: 10px;
+}
+#main #description .description-wrapper .description-main-visual .description-slider .slick-dots {
+  bottom: 40px;
 }
 #main #description .description-wrapper .description-main-visual .description-slider .description-visual .comment {
   font-size: 14px;
